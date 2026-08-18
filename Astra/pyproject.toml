@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astra-ai"
+version = "0.1.0"
+description = "Astra - Personal AI Operating Layer and Runtime for Linux"
+authors = [{ name = "Astra Core Team" }]
+readme = "docs/00_PROJECT_CHARTER.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+astra = "astra.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
